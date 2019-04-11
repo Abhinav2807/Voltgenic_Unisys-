@@ -1,0 +1,157 @@
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+    min-width: 100%;
+    margin: 0;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+body
+{
+  min-width: 100%;
+  background-color: black;
+  margin: 0;
+  font-family: courier;
+  color: white;
+  font-weight: 100;
+
+
+}
+
+.top_bar
+{
+  width: 100%;
+  height: 10%;
+  background-color: #111;
+  position: fixed;
+  font-family: courier;
+  font-weight: 100;
+  font-size: 300%;
+  color: #FFF;
+  display: flex;
+  align-items: center; /* align vertical */
+}
+
+
+
+
+
+.side_bar_left
+{
+  margin-top: 6%;
+  margin-left: 0.5%;
+  overflow: auto;
+  width: 15%;
+  max-height: 85%;
+  float: left;
+  color: white;
+
+}
+
+.area_block
+{
+  margin-top: 0%;
+  margin-bottom: 2%;
+  width: 98%;
+  background-color: #111;
+  min-height: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.content
+{
+  background-color: #FFF;
+  width: 75%;
+  height: 85%;
+  float:left;
+  margin-top: 6%;
+  margin-left: 0.5%;
+}
+
+.side_bar_right
+{
+  margin-top: 6%;
+  margin-left: 0.5%;
+  width: 8%;
+  height: 85%;
+  float: left;
+}
+
+.options
+{
+  width: 98%;
+  height: 19%;
+  background-color: #222;
+  margin-top: 0;
+  margin-bottom: 5.6%;
+  color: white;
+}
+
+
+
+
+
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  margin-left: 35%;
+  margin-top: 5%;
+}
+
+
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 50%;
+  padding: 1%;
+  background-color: #222;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 3%;
+  margin: 1% 0 4.4% 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 3.2% 4%;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:2%;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
